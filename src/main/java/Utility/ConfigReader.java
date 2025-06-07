@@ -16,14 +16,15 @@ public class ConfigReader {
     public Properties init_prop()  {
         property = new Properties();
         try {
-            FileInputStream file = new FileInputStream(".src/test/resources/config/config.properties");
+            FileInputStream file = new FileInputStream("src/test/resources/Config/config.properties");
             property.load(file);
-        }catch(FileNotFoundException e) {
+        }catch(FileNotFoundException e){
             e.printStackTrace();
-       } catch(IOException e){
+        } catch(IOException e){
             e.printStackTrace();
         }
         return property;
     }
+
 
 }

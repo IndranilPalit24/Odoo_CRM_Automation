@@ -1,30 +1,36 @@
 package StepDefinition;
 
+import DataProvider.DriverFactory;
+import Pages.Loginpage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginPageSteps {
+    private static String Title;
+    private Loginpage loginpage = new Loginpage(DriverFactory.getDriver());
 
     @Given("I login into the website")
-    public void i_login_into_the_website() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void i_login_into_the_website() throws InterruptedException {
+        DriverFactory.getDriver().get("https://abc-company5.odoo.com/odoo");
+        Thread.sleep(5000);
     }
     @When("I enter the username {string} and password {string}")
     public void i_enter_the_username_and_password(String username, String password) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        loginpage.EnterEmail(username);
+        loginpage.EnterPassword(password);
     }
     @Then("I should be logged into the website")
-    public void i_should_be_logged_into_the_website() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void i_should_be_logged_into_the_website() throws InterruptedException {
+        loginpage.ClickonLoginButton();
+        Thread.sleep(5000);
     }
     @Then("Home Page should be opened and title should be title {string}")
-    public void home_page_should_be_opened_and_title_should_be_title(String odoo) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void home_page_should_be_opened_and_title_should_be_title(String ExpectedTitle) {
+        Title = loginpage.getLoginPageTitle();
+        System.out.println("Login Page Title: " + Title);
+        Assert.assertTrue(Title.contains(ExpectedTitle));
     }
 
 }
