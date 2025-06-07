@@ -32,4 +32,12 @@ public class Loginpage {
         driver.findElement(LoginButton).click();
     }
 
+    public HomePage doLogin(String userName, String PassWord){
+        driver.findElement(EmailId).sendKeys(userName);
+        driver.findElement(Password).sendKeys(PassWord);
+        System.out.println("Logged in with UserName: "+userName+" and Password: "+PassWord);
+        driver.findElement(LoginButton).click();
+        //if it lands on homepage then do login method responsibility to provide the home page as per chaining method
+        return new HomePage(driver);
+    }
 }
