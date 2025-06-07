@@ -27,7 +27,8 @@ public class LoginPageSteps {
         Thread.sleep(5000);
     }
     @Then("Home Page should be opened and title should be title {string}")
-    public void home_page_should_be_opened_and_title_should_be_title(String ExpectedTitle) {
+    public void home_page_should_be_opened_and_title_should_be_title(String ExpectedTitle) throws InterruptedException {
+        Thread.sleep(5000);
         Title = loginpage.getLoginPageTitle();
         System.out.println("Login Page Title: " + Title);
         Assert.assertTrue(Title.contains(ExpectedTitle));
