@@ -7,4 +7,4 @@ Feature: Login Page Scenario
     And Home Page should be opened and title should be title "<title>"
     Examples:
       |username|password| title|
-      |        |        |      |
+      |laslowjas@gmail.com|Rock3td@@@@!ne|Home|

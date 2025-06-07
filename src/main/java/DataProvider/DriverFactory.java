@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverFactory {
     public static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
-
     /**
      * Initializes the WebDriver based on the browser name provided.
      *
@@ -14,7 +13,7 @@ public class DriverFactory {
      * @return A WebDriver instance for the specified browser.
      */
     public WebDriver init_Driver(String Browser){
-        System.out.print("Browser is "+Browser);
+        System.out.println("Browser is "+Browser);
 
         if(Browser.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
