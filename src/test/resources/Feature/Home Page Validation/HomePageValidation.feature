@@ -1,6 +1,4 @@
 Feature: Home Page validation Scenario
-  This feature validates the Home Page List for Odoo CRM.
-
 
   Background:
   Given User has already logged into the application
