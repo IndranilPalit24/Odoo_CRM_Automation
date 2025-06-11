@@ -3,7 +3,7 @@ Feature: Home Page validation Scenario
   Background:
   Given User has already logged into the application
   |username|password|
-  |laslowjas@gmail.com|Rock3td@@@@!ne|
+  |<username>|<password>|
 
 Scenario Outline:
   Given User is on the HomePage Login Page
