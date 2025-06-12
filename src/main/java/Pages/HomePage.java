@@ -19,6 +19,10 @@ public class HomePage {
         this.driver=driver;
     }
 
+    /**
+     * Returns the title of the current page.
+     * @return
+     */
     public String getHomePageTitle(){
         return driver.getTitle();
     }
