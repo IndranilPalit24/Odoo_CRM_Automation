@@ -1,3 +1,4 @@
+@LoginPageFeature
 Feature: Login Page Scenario
   This feature validates the login functionality for Odoo CRM.
 
