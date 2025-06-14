@@ -1,8 +1,8 @@
 @HomePageValidation
-Feature: Login Page Scenario
+Feature: Home Page Validation Scenario
   This feature validates the Home Page in Odoo CRM
 
-  Background:
+  Background: User will login using below crendentials
     Given User has already logged into the application
     |username||password|
     |laslowjas@gmail.com||Rock3td@@@@!ne|

@@ -24,8 +24,8 @@ public class HomePageValidationSteps {
         DriverFactory.getDriver().get("https://abc-company5.odoo.com/odoo");
         Thread.sleep(5000);
         homepage = loginpage.doLogin(username,password);
-
     }
+
     @Given("User is on the HomePage Login Page")
     public void user_is_on_the_home_page_login_page() {
         String title = homepage.getHomePageTitle();
