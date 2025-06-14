@@ -7,6 +7,7 @@ Feature: Home Page Validation Scenario
     |username||password|
     |<username>||<Password>|
 
+  @HomePageValidationTestRunner @Group02
   Scenario Outline: To Check working of the Home Page Validation in Odoo CRM
     Given User is on the HomePage Login Page
     When Home Page should be opened and title should be title "<title>"

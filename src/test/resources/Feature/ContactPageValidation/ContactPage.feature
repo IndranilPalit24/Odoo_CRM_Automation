@@ -7,6 +7,7 @@ Feature: Contacts Creation
       |username||password|
       |<username>||<Password>|
 
+  @ContactPageRunner @Group03
   Scenario Outline: User is on Contacts Page and is creating a new Account for Person
     Given User is on HomePage and clicks on Contacts
     When User clicks on New Button to create a New Contact
@@ -17,6 +18,7 @@ Feature: Contacts Creation
     |Person     | John Doe  |
 
 
+  @ContactPageRunner @Group04
   Scenario Outline: User is on Contacts Page and is creating a new Account for Company
     Given User is on HomePage and clicks on Contacts
     When User clicks on New Button to create a New Contact
