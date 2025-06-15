@@ -28,8 +28,14 @@ public class Hooks {
     @Before(order = 1)
     public void launchBrowser(){
         String browser_Name = prop.getProperty("browser");
+        String headless_Mode = prop.getProperty("headless");
         driverFactory = new DriverFactory();
-        driver = driverFactory.init_Driver(browser_Name);
+        driver = driverFactory.init_Driver(browser_Name,headless_Mode);
+
+        //URL to Launch test environment
+        String url = prop.getProperty("URL");
+        driver.get(url);
+        System.out.println("Launching Browser with URL: "+url);
     }
 
     @After(order = 0)

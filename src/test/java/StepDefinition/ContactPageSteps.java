@@ -27,6 +27,7 @@ public class ContactPageSteps {
         contactsPage.clickonContactSection();
         System.out.println("Contacts Section is Clicked.....");
 
+        Thread.sleep(5000);
         contactsPage.verifyContactSection();
         System.out.println("Confirmed.. You are inside Contacts Page....");
     }
@@ -69,11 +70,9 @@ public class ContactPageSteps {
     @Then("User selects Contact Type as {string} to select and starts to create a Account for Company as {string}")
     public void user_selects_contact_to_select_and_starts_to_create_a_Account_for_Company(String ContactType, String Company) throws InterruptedException {
         Thread.sleep(5000);
-        contactsPage.SelectCompanyOrPerson(ContactType, Company);
         System.out.println("Selected "+ContactType+ " as Contact Type and Created a New Account for Company.......");
-
+        contactsPage.SelectCompanyOrPerson(ContactType, Company);
         Thread.sleep(5000);
-
     }
 
     @And("New Account is created for the newly established Company")
@@ -81,8 +80,5 @@ public class ContactPageSteps {
         contactsPage.NavigateBackToContactList();
 
     }
-
-
-
 
 }
