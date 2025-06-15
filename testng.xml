@@ -4,6 +4,24 @@
 
     <test name="Login Runner">
         <classes>
+            <class name="Runner.LoginTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Home Page Validation Runner">
+        <classes>
+            <class name="Runner.HomePageValidationTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Contact Person Creation Runner">
+        <classes>
+            <class name="Runner.ContactPageValidationPersonRunner"/>
+        </classes>
+    </test>
+
+    <test name="Contact Company Creation Runner">
+        <classes>
             <class name="Runner.ContactPageValidationCompanyRunner"/>
         </classes>
     </test>
