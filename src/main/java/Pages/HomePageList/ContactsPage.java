@@ -135,62 +135,81 @@ public class ContactsPage {
          */
         wait.until(ExpectedConditions.elementToBeClickable(CompanyName)).click();
         driver.findElement(CompanyName).sendKeys(companyName);
+        System.out.println("Company Account is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(CompanyEmail)).click();
         driver.findElement(CompanyEmail).sendKeys("abc123@gmail.com");
+        System.out.println("Company Email is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(PhoneButton)).click();
         driver.findElement(PhoneButton).sendKeys("1234567891");
+        System.out.println("Company Phone is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Street1)).click();
         driver.findElement(Street1).sendKeys("Aberdeen City Council, Business Hub 4");
+        System.out.println("Street1 is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Street2)).click();
         driver.findElement(Street2).sendKeys("Marischal College, Broad Street, Aberdeen");
+        System.out.println("Street2 is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(City)).click();
         driver.findElement(City).sendKeys("Aberdeen");
+        System.out.println("City is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Zip)).click();
         driver.findElement(Zip).sendKeys("AB12 3AB" +Keys.ENTER);
+        System.out.println("Zip is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(State)).click();
         driver.findElement(State).sendKeys("Aberdeenshire (GB)");
+        System.out.println("State is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(StateName)).click();
+        System.out.println("State Name is being Created.....");
 
 //        wait.until(ExpectedConditions.elementToBeClickable(Country)).click();
 //        driver.findElement(Country).sendKeys("United Kingdom");
 
         wait.until(ExpectedConditions.elementToBeClickable(GSTIN)).click();
         driver.findElement(GSTIN).sendKeys("BE0477472701");
+        System.out.println("GSTIN is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Website)).click();
         driver.findElement(Website).sendKeys("https://www.odoo.com");
+        System.out.println("Website is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(CategoryId)).click();
         driver.findElement(CategoryId).sendKeys("B2B");
+        System.out.println("Tags are being Posted in the Account.....");
 //        driver.findElement(B2BTag).click();
 
         wait.until(ExpectedConditions.elementToBeClickable(AddContact)).click();
         driver.findElement(AddContact).click();
+        System.out.println("Contact is being Added to the Contact List.....");
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(ModalChange));
 
         wait.until(ExpectedConditions.elementToBeClickable(PersonName)).click();
         driver.findElement(PersonName).sendKeys("Brandon");
+        System.out.println("Person Name is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(EmailIdModal)).click();
         driver.findElement(PersonEmail).sendKeys("brandon2013@gmail.com");
+        System.out.println("Person Email is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(PhoneModal)).click();
         driver.findElement(PersonPhone).sendKeys("98753213445");
+        System.out.println("Person Phone is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(JobTitleforCompany)).click();
         driver.findElement(JobTitleforCompany).sendKeys("Vice President");
+        System.out.println("Job Title is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(SaveAndClose));
         driver.findElement(SaveAndClose).click();
+
+        System.out.println("Company account has been created...");
     }
 
     public void CreateNewAccountForPerson(String personName){
