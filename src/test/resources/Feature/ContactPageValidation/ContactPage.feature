@@ -5,7 +5,7 @@ Feature: Contacts Creation
   Background: User will login using below crendentials
     Given User has already logged into the application
       |username||password|
-      |<username>||<Password>|
+      |laslowjas@gmail.com||Rock3td@@@@!ne|
 
   @ContactPageRunner @Group03
   Scenario Outline: User is on Contacts Page and is creating a new Account for Person
