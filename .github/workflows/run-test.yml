@@ -1,10 +1,9 @@
-name: Run Selenium TestNG Tests
+name: Run Cucumber TestNG Automation
 
 on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
   test:
@@ -20,13 +19,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-m2
+      - name: Check Java version
+        run: java -version
 
-      - name: Run tests with Maven
-        run: mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
+      - name: Build and run tests with Maven
+        run: mvn clean test
+
