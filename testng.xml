@@ -2,6 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Cucumber Test Suite" parallel="false" thread-count="1">
 
+<listeners>
+    <listener class-name="ExtentReports.ExtentReportListener">
+    </listener>
+</listeners>
+
     <test name="Login Runner">
         <classes>
             <class name="Runner.LoginTestRunner"/>
