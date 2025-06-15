@@ -13,8 +13,8 @@
         <cucumber.version>7.22.2</cucumber.version>
         <maven.compiler.version>3.14.0</maven.compiler.version>
         <maven.surefire.version>3.5.3</maven.surefire.version>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21.0.6</maven.compiler.source>
+        <maven.compiler.target>21.0.6</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -94,8 +94,8 @@
                 <version>${maven.compiler.version}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>21.0.6</source>
+                    <target>21.0.6</target>
                 </configuration>
             </plugin>
             <plugin>
