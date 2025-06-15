@@ -14,6 +14,7 @@ public class DriverFactory {
      * @return A WebDriver instance for the specified browser.
      */
     public WebDriver init_Driver(String Browser, String headless_Mode){
+        System.out.println("-----------------------------------NEW TEST STARTED-------------------------------------");
         System.out.println("Browser is "+Browser);
 
         if(Browser.equalsIgnoreCase("chrome")){
