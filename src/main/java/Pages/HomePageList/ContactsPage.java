@@ -200,32 +200,42 @@ public class ContactsPage {
          */
         wait.until(ExpectedConditions.elementToBeClickable(PersonName)).click();
         driver.findElement(PersonName).sendKeys(personName);
+        System.out.println("Person Account is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(PersonEmail)).click();
         driver.findElement(PersonEmail).sendKeys("abccompany@gmail.com");
+        System.out.println("Person Email is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(PersonPhone)).click();
         driver.findElement(PersonPhone).sendKeys("1234567891");
+        System.out.println("Person Phone is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(CompanyNameForPerson)).click();
         driver.findElement(CompanyNameForPerson).sendKeys("Lumber Inc");
+        System.out.println("Company Name is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Street1)).click();
         driver.findElement(Street1).sendKeys("Aberdeen City Council, Business Hub 4");
+        System.out.println("Street1 is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Street2)).click();
         driver.findElement(Street2).sendKeys("Marischal College, Broad Street, Aberdeen");
+        System.out.println("Street2 is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(City)).click();
         driver.findElement(City).sendKeys("Aberdeen");
+        System.out.println("City is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Zip)).click();
         driver.findElement(Zip).sendKeys("AB12 3AB" +Keys.ENTER);
+        System.out.println("Zip is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(State)).click();
         driver.findElement(State).sendKeys("Aberdeenshire (GB)");
+        System.out.println("State is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(StateName)).click();
+        System.out.println("State Name is being Created.....");
 
 //        wait.until(ExpectedConditions.elementToBeClickable(Country)).click();
 //        driver.findElement(Country).sendKeys("United Kingdom");
@@ -233,12 +243,15 @@ public class ContactsPage {
 
         wait.until(ExpectedConditions.elementToBeClickable(JobPosition)).click();
         driver.findElement(JobPosition).sendKeys("Sales Director");
+        System.out.println("Job Position is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(GSTIN)).click();
         driver.findElement(GSTIN).sendKeys("BE0477472701");
+        System.out.println("GSTIN is being Created.....");
 
         wait.until(ExpectedConditions.elementToBeClickable(Website)).click();
         driver.findElement(Website).sendKeys("https://www.odoo.com");
+        System.out.println("Website is being Created.....");
 
 
         String[] tags = {"Sales", "Marketing", "Operations"};
@@ -249,10 +262,12 @@ public class ContactsPage {
             driver.findElement(CategoryId).sendKeys(tag);
             driver.findElement(CategoryId).sendKeys(Keys.ENTER);
         }
+        System.out.println("Tags are being Posted in the Account.....");
 
     }
     public void NavigateBackToContactList(){
         driver.findElement(ContactList).click();
+        System.out.println("Navigated Back to Contact List Page.....");
 
     }
 

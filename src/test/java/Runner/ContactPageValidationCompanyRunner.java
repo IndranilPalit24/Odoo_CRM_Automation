@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/Feature",
         glue = {"StepDefinition","Hooks"},
-        tags = "@Group04"
+        tags = "@Group03"
 )
 public class ContactPageValidationCompanyRunner extends AbstractTestNGCucumberTests {
 }

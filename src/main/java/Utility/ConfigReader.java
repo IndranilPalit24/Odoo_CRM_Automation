@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    public Properties property;
+    public static Properties property;
 
     /**
      * Loads the properties file from the specified location.
@@ -24,6 +24,26 @@ public class ConfigReader {
             e.printStackTrace();
         }
         return property;
+    }
+
+    public static String getURL(){
+        String url = property.getProperty("URL");
+
+        if(url!=null){
+            return url;
+        }else{
+            throw new RuntimeException("URL is not defined in the config.properties file");
+        }
+    }
+
+    public static String getMode(){
+        String mode = property.getProperty("headless");
+
+        if(mode!=null){
+            return mode;
+        }else{
+            throw new RuntimeException("Headless mode is not defined in the config.properties file");
+        }
     }
 
 

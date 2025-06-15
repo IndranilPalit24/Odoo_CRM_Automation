@@ -2,6 +2,7 @@ package StepDefinition;
 
 import DataProvider.DriverFactory;
 import Pages.Loginpage;
+import Utility.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,10 +11,13 @@ import org.junit.Assert;
 public class LoginPageSteps {
     private static String Title;
     private Loginpage loginpage = new Loginpage(DriverFactory.getDriver());
+    ConfigReader configReader = new ConfigReader();
+    String URL = configReader.getURL();
 
     @Given("I login into the website")
     public void i_login_into_the_website() throws InterruptedException {
-        DriverFactory.getDriver().get("https://abc-company5.odoo.com/odoo");
+        DriverFactory.getDriver().get(URL);
+        System.out.println("Launching Browser with URL: "+URL);
         Thread.sleep(5000);
     }
     @When("I enter the username {string} and password {string}")
