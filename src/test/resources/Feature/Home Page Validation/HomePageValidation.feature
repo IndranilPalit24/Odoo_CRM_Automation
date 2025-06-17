@@ -5,7 +5,7 @@ Feature: Home Page Validation Scenario
   Background: User will login using below crendentials
     Given User has already logged into the application
     |username||password|
-    |<username>||<password>|
+    |laslowjas@gmail.com||Rock3td@@@@!ne|
 
   @HomePageValidationTestRunner @Group02
   Scenario Outline: To Check working of the Home Page Validation in Odoo CRM
