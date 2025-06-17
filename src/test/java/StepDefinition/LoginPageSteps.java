@@ -18,7 +18,7 @@ public class LoginPageSteps {
     public void i_login_into_the_website() throws InterruptedException {
         DriverFactory.getDriver().get(URL);
         System.out.println("Launching Browser with URL: "+URL);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
     }
     @When("I enter the username {string} and password {string}")
     public void i_enter_the_username_and_password(String username, String password) {
