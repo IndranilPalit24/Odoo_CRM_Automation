@@ -5,11 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import DataProvider.DriverFactory;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomePage {
     private WebDriver driver;
+    private static Logger log;
 
     //Locators
     private By HomePageSection = By.xpath("//div[@role=\"listbox\"]/div");
@@ -24,6 +30,7 @@ public class HomePage {
      * @return
      */
     public String getHomePageTitle(){
+    	log=LogManager.getLogger(DriverFactory.class);
         return driver.getTitle();
     }
 

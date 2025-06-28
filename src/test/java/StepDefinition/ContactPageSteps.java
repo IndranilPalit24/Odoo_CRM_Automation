@@ -9,34 +9,37 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import java.util.List;
 import java.util.Map;
 
 public class ContactPageSteps {
     private Loginpage loginpage = new Loginpage(DriverFactory.getDriver());
     private ContactsPage contactsPage = new ContactsPage(DriverFactory.getDriver());
+    private static Logger log;
 
 
     @Given("User is on HomePage and clicks on Contacts")
     public void user_is_on_homepage_and_clicks_on_contacts() throws InterruptedException {
+    	log = LogManager.getLogger(this.getClass().getName());
         Thread.sleep(5000);
         contactsPage.getContactSection();
-        System.out.println("You are about to Click on Contacts Section.....");
+        log.info("You are about to Click on Contacts Section.....");
 
         contactsPage.clickonContactSection();
-        System.out.println("Contacts Section is Clicked.....");
+        log.info("Contacts Section is Clicked.....");
 
         Thread.sleep(5000);
         contactsPage.verifyContactSection();
-        System.out.println("Confirmed.. You are inside Contacts Page....");
+        log.info("Confirmed.. You are inside Contacts Page....");
     }
 
     @When("User clicks on New Button to create a New Contact")
     public void user_is_on_new_button_to_create_a_new_contact() throws InterruptedException {
         Thread.sleep(5000);
         contactsPage.clickonNewButton();
-        System.out.println("Clicked on New Button to Create a New Contact.....");
+        log.info("Clicked on New Button to Create a New Contact.....");
 
     }
 
@@ -49,7 +52,7 @@ public class ContactPageSteps {
     @Then("User selects Contact Type as {string} to select and starts to create a Account for Person as {string}")
     public void user_selects_contact_to_select_and_starts_to_create_a_Account_for_individual_Person(String ContactType, String Person) throws InterruptedException {
         contactsPage.SelectCompanyOrPerson(ContactType, Person);
-        System.out.println("Selected " +ContactType+ " as Contact Type and Created a New Account for Person.......");
+        log.info("Selected " +ContactType+ " as Contact Type and Created a New Account for Person.......");
 
 
         Thread.sleep(5000);
@@ -70,7 +73,7 @@ public class ContactPageSteps {
     @Then("User selects Contact Type as {string} to select and starts to create a Account for Company as {string}")
     public void user_selects_contact_to_select_and_starts_to_create_a_Account_for_Company(String ContactType, String Company) throws InterruptedException {
         Thread.sleep(5000);
-        System.out.println("Selected "+ContactType+ " as Contact Type and Created a New Account for Company.......");
+        log.info("Selected "+ContactType+ " as Contact Type and Created a New Account for Company.......");
         contactsPage.SelectCompanyOrPerson(ContactType, Company);
         Thread.sleep(5000);
     }

@@ -4,9 +4,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class DriverFactory {
     public static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
+    private static Logger log;
     /**
      * Initializes the WebDriver based on the browser name provided.
      *
@@ -14,8 +17,8 @@ public class DriverFactory {
      * @return A WebDriver instance for the specified browser.
      */
     public WebDriver init_Driver(String Browser, String headless_Mode){
-        System.out.println("-----------------------------------NEW TEST STARTED-------------------------------------");
-        System.out.println("Browser is "+Browser);
+        log = LogManager.getLogger("=======================NEW TEST STARTED====================\n");
+        log.info("Browser is :"+Browser +"\n");
 
         if(Browser.equalsIgnoreCase("chrome")){
             WebDriverManager.chromedriver().setup();
@@ -37,7 +40,7 @@ public class DriverFactory {
 
             driverThread.set(new ChromeDriver(options));
         }else{
-            System.out.println("Browser not supported. Please pass the Correct Browser "+Browser);
+            log.info("Browser not supported. Please pass the Correct Browser :"+Browser +"\n");
         }
 
         //Add More Browsers here
