@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-28T09:41:40Z" name="Cucumber Test Suite" finished-at="2025-06-28T09:43:27Z" duration-ms="107285">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.LoginTestRunner@14bdbc74]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.HomePageValidationTestRunner@49b2a47d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.ContactPageValidationPersonRunner@4f49f6af]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.ContactPageValidationCompanyRunner@13526e59]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-06-28T09:41:40Z" name="Login Runner" finished-at="2025-06-28T09:42:06Z" duration-ms="26095">
+      <class name="Runner.LoginTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.LoginTestRunner@14bdbc74]" started-at="2025-06-28T15:11:40Z" name="setUpClass" finished-at="2025-06-28T15:11:40Z" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@26bb92e2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.LoginTestRunner@14bdbc74]" started-at="2025-06-28T15:11:40Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T15:12:06Z" duration-ms="25938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To check the working of the login page in Odoo CRM using Email and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page Scenario"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.LoginTestRunner@14bdbc74]" started-at="2025-06-28T15:12:06Z" name="tearDownClass" finished-at="2025-06-28T15:12:06Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.LoginTestRunner -->
+    </test> <!-- Login Runner -->
+    <test started-at="2025-06-28T09:42:06Z" name="Home Page Validation Runner" finished-at="2025-06-28T09:42:22Z" duration-ms="15601">
+      <class name="Runner.HomePageValidationTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.HomePageValidationTestRunner@49b2a47d]" started-at="2025-06-28T15:12:06Z" name="setUpClass" finished-at="2025-06-28T15:12:06Z" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18907af2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.HomePageValidationTestRunner@49b2a47d]" started-at="2025-06-28T15:12:06Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T15:12:22Z" duration-ms="15560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Check working of the Home Page Validation in Odoo CRM"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Validation Scenario"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.HomePageValidationTestRunner@49b2a47d]" started-at="2025-06-28T15:12:22Z" name="tearDownClass" finished-at="2025-06-28T15:12:22Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.HomePageValidationTestRunner -->
+    </test> <!-- Home Page Validation Runner -->
+    <test started-at="2025-06-28T09:42:22Z" name="Contact Person Creation Runner" finished-at="2025-06-28T09:42:51Z" duration-ms="29625">
+      <class name="Runner.ContactPageValidationPersonRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.ContactPageValidationPersonRunner@4f49f6af]" started-at="2025-06-28T15:12:22Z" name="setUpClass" finished-at="2025-06-28T15:12:22Z" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@658e7ead]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.ContactPageValidationPersonRunner@4f49f6af]" started-at="2025-06-28T15:12:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T15:12:51Z" duration-ms="29601" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is on Contacts Page and is creating a new Account for Person"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contacts Creation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input class="o_input" id="city_0" type="text" autocomplete="off" placeholder="City"> is not clickable at point (181, 386). Other element would receive the click: <a class="dropdown-item ui-menu-item-wrapper text-truncate" id="parent_id_0_0_3" role="option" href="#" aria-selected="false">...</a>
+  (Session info: chrome=137.0.7151.122)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [626e3581263cd728cd7916c947ae9af3, clickElement {id=f.A15131277916DB3E4E96B977657493DF.d.14771BF2539671F6226A3ADFB6AA3854.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\INDRAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56806/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (626e3581263cd728cd7916c947ae9af3)] -> xpath: //input[@placeholder='City']]
+Session ID: 626e3581263cd728cd7916c947ae9af3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input class="o_input" id="city_0" type="text" autocomplete="off" placeholder="City"> is not clickable at point (181, 386). Other element would receive the click: <a class="dropdown-item ui-menu-item-wrapper text-truncate" id="parent_id_0_0_3" role="option" href="#" aria-selected="false">...</a>
+  (Session info: chrome=137.0.7151.122)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [626e3581263cd728cd7916c947ae9af3, clickElement {id=f.A15131277916DB3E4E96B977657493DF.d.14771BF2539671F6226A3ADFB6AA3854.e.113}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\INDRAN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56806}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56806/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (626e3581263cd728cd7916c947ae9af3)] -> xpath: //input[@placeholder='City']]
+Session ID: 626e3581263cd728cd7916c947ae9af3
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Pages.HomePageList.ContactsPage.CreateNewAccountForPerson(ContactsPage.java:250)
+	at Pages.HomePageList.ContactsPage.SelectCompanyOrPerson(ContactsPage.java:127)
+	at StepDefinition.ContactPageSteps.user_selects_contact_to_select_and_starts_to_create_a_Account_for_individual_Person(ContactPageSteps.java:54)
+	at ✽.User selects Contact Type as "Person" to select and starts to create a Account for Person as "John Doe"(file:///D:/OdooCRMAutomationProject/Odoo_CRM_Automation/src/test/resources/Feature/ContactPageValidation/ContactPage.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.ContactPageValidationPersonRunner@4f49f6af]" started-at="2025-06-28T15:12:51Z" name="tearDownClass" finished-at="2025-06-28T15:12:51Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.ContactPageValidationPersonRunner -->
+    </test> <!-- Contact Person Creation Runner -->
+    <test started-at="2025-06-28T09:42:51Z" name="Contact Company Creation Runner" finished-at="2025-06-28T09:43:27Z" duration-ms="35921">
+      <class name="Runner.ContactPageValidationCompanyRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.ContactPageValidationCompanyRunner@13526e59]" started-at="2025-06-28T15:12:51Z" name="setUpClass" finished-at="2025-06-28T15:12:51Z" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b1a30e5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.ContactPageValidationCompanyRunner@13526e59]" started-at="2025-06-28T15:12:51Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-28T15:13:27Z" duration-ms="35907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is on Contacts Page and is creating a new Account for Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Contacts Creation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.ContactPageValidationCompanyRunner@13526e59]" started-at="2025-06-28T15:13:27Z" name="tearDownClass" finished-at="2025-06-28T15:13:27Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.ContactPageValidationCompanyRunner -->
+    </test> <!-- Contact Company Creation Runner -->
+  </suite> <!-- Cucumber Test Suite -->
+</testng-results>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Cucumber Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ExtentReports.ExtentReportListener"/>
+  </listeners>
+  <test name="Contact Person Creation Runner(failed)">
+    <classes>
+      <class name="Runner.ContactPageValidationPersonRunner">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- Runner.ContactPageValidationPersonRunner -->
+    </classes>
+  </test> <!-- Contact Person Creation Runner(failed) -->
+</suite> <!-- Failed suite [Cucumber Test Suite] -->

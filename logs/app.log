@@ -1,0 +1,68 @@
+14:09:55.405 [main]INFO  DataProvider.DriverFactory - ------------------------------Odoo CRM Started-----------------------------------------------
+14:09:55.425 [main]INFO  DataProvider.DriverFactory - ------------------------------Odoo CRM Started-----------------------------------------------
+14:13:18.745 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:13:22.580 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:13:22.799 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:13:22.803 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:13:24.789 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:13:25.044 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:14:58.582 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:15:01.668 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:15:02.832 [main]INFO  StepDefinition.LoginPageSteps - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:15:13.069 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:15:13.164 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:15:15.199 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:15:20.383 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:15:20.424 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:15:22.663 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:15:28.201 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:15:28.270 [main]INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:15:30.818 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:15:31.025 [main]INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:18:52.045 [main] INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:18:54.435 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:18:54.651 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:18:54.728 [main] INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:18:56.786 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:19:02.033 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:19:02.082 [main] INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:19:04.265 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:19:10.263 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:19:10.300 [main] INFO  -----------------------------------NEW TEST STARTED------------------------------------- - Browser is Chrome
+14:19:12.307 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:19:12.587 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:20:36.521 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is Chrome
+14:20:38.941 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:20:39.159 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:20:39.240 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is Chrome
+14:20:41.346 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:20:41.531 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:20:41.577 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is Chrome
+14:20:43.485 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:20:48.760 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:20:48.829 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is Chrome
+14:20:50.848 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:20:51.045 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:21:51.827 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is 
+Chrome
+14:21:54.253 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:21:54.385 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is 
+Chrome
+14:21:56.429 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:21:56.674 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:21:56.729 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is 
+Chrome
+14:21:58.880 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:21:59.037 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
+14:21:59.084 [main] INFO  -----------------------------------NEW TEST STARTED-------------------------------------
+ - Browser is 
+Chrome
+14:22:01.417 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - Launching Browser with URL: https://abc-company5.odoo.com/odoo
+14:22:07.463 [main] INFO  ------------------------------Odoo CRM Started----------------------------------------------- - -------------------------------Driver is Closed---------------------------
